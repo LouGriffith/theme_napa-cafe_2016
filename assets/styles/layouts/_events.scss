@@ -1,0 +1,310 @@
+#events{
+	@include make-row();
+	max-width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+// Event
+.event-list{
+	padding: 1em 2em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li{
+		padding: 1em 1em 2em; 
+		border-bottom: 1px solid #ddd;
+
+		&:last-child{
+			border-bottom: 0px solid #fff;
+		}
+	}
+
+	h2{
+		margin-bottom: 0;
+	}
+
+	.event-date{
+		font-family: 'Lato', serif;
+		color: #9e9d9e;
+	}
+
+	.event-desc{
+		font-family: 'Lato', serif;
+		margin-bottom: 1.5em;
+
+		.special-guest{
+			margin-top: .5em;
+			display: inline-block;
+			border-left: 3px solid $brand-primary;
+			padding: .5em; 
+		}
+	}
+
+	.btn{
+		font-family: 'Lato', serif;
+	}
+}
+
+.single-event .page-header{
+	padding: 16em 0 0;
+}
+
+// .event-bar{
+// 	@include make-lg-column(10);
+// 	z-index: 400;
+// 	background: rgba(255, 255, 255, .9);
+// 	border-bottom: 2px solid $brand-primary;
+
+// 	@media (max-width: $screen-sm-max) {
+// 		background: none;
+// 	}
+// }
+
+// .event-info{
+// 	@include make-lg-column(9);
+// 	position: relative;
+// 	z-index: 400;
+
+// 	@media (max-width: $screen-sm-max) {
+// 		text-align: center;
+// 	}
+
+// 	h1{
+// 		font-size: 2.25em;
+// 		margin: 1.25em 0 0;
+// 		padding: 0;
+// 		color: #333;
+// 		text-align: left;
+
+// 		@media (max-width: $screen-sm-max) {
+// 			text-align: center;
+// 		}
+// 	}
+
+// 	.event-date{
+// 		font-family: 'Lato', serif;
+// 		display: inline-block;
+// 	}
+// }
+
+// .event-actions{
+// 	margin-top: 1em;
+// 	padding: 1em;
+// 	border-left: 1px solid #ddd;
+// 	@include make-lg-column(3);
+// 	text-align: center;
+
+// 	@media (max-width: $screen-sm-max) {
+// 		border-left: 0px solid #ddd;
+// 	}
+
+// 	.ticket-price{
+// 	}
+
+// 	.dollar-symbol{
+// 		font-size: .75em;
+// 	}
+
+// 	.ticket-ammount{
+// 		font-size: 1.25em;
+// 		font-weight: bold;
+// 	}
+
+// 	.ticket-per{
+// 		font-family: 'Lato', serif;
+// 		font-style: italic;
+// 		font-size: .75em;
+// 	}
+
+// 	.ticket-includes{
+// 		font-family: 'Lato', serif;
+// 		font-style: italic;
+// 		font-size: .75em;
+// 	}
+
+// 	.btn{
+// 		margin-top: .5em;
+// 		font-size: 1.25em;
+// 	}
+// }
+
+.single-event{
+	.event-content{
+		margin-top: 3em;
+	}
+}
+
+.event-bar{
+	@include make-lg-column(12);
+	position: relative;
+	z-index: 400;
+	text-align: left;
+	color: #ddd;
+	border-bottom: 2px solid $brand-primary;
+	padding: 0;
+	margin-top: 1em;
+
+	h1{
+		text-align: left;
+		padding: 0;
+
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: .5em;
+		}
+	}
+
+	@media (max-width: $screen-sm-max) {
+		text-align: center;
+		margin-top: 4em;
+	}
+}
+
+.event-info{
+	@include make-lg-column(7);
+	padding-top: 1em;
+	padding-bottom: 1em;	
+}
+
+.event-actions{
+	@include make-lg-column(5);	
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.ticket-price{
+	padding: 0 0 .5em;
+}
+
+.event-details{
+	@include make-lg-column(6);
+	padding: 0;
+
+	.event-desc{
+		font-family: 'Lato', serif;
+		font-size: 1.25;
+		line-height: 2em;
+		padding-bottom: 2em;
+		margin-bottom: 3em;
+		display: block;
+		border-bottom: 1px solid #f3f3f3;
+	}
+}
+
+.event-guest{
+	@include make-lg-column-offset(1);
+	@include make-lg-column(5);
+	@include make-row;
+
+
+	@media (max-width: $screen-sm-max) {
+		border-top: 1px solid #eee;
+		margin: 1em 0;
+	}
+
+	h3{
+		margin: 0;
+		margin-bottom: 1em;
+		text-align: center;
+		letter-spacing: .25em;
+		font-variant: small-caps;
+
+		@media (max-width: $screen-sm-max) {
+			margin: 1em 0;
+		}
+	}
+
+	.profile-pic{
+		@include make-xs-column(4);
+		img{
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	.profile-info{
+		@include make-sm-column(8);
+	}
+
+	.guest-name{
+		font-size: 1.75em;
+	}
+
+	.guest-company{
+		margin-top: -.5em;
+		display: block;
+		color: #9e9d9e;
+	}
+
+	.guest-bio{
+		font-family: 'Lato', serif;
+		display: block;
+		margin: 1em 0;
+		color: #9e9d9e;
+	}
+
+	.btn{
+		font-family: 'Lato', serif;
+
+		@media (max-width: $screen-sm-max) {
+			width: 100%;
+		}
+	}
+}
+
+.event-schedule{
+	h2{
+		letter-spacing: .25em;
+		font-variant: small-caps;
+		margin-bottom: 1em;
+
+		@media (max-width: $screen-sm-max) {
+			text-align: center;
+		}
+	}
+
+	p{
+		margin-bottom: .5em;
+	}
+
+	ul{
+		@include make-row;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.course{
+		@include make-lg-column(12);
+		margin: 0;
+		padding: 0;
+		margin-bottom: 2em;
+
+		@media (max-width: $screen-sm-max) {
+			margin-bottom: 3em;
+		}
+	}
+
+	.course-name{
+		text-transform: uppercase;
+		letter-spacing: .25em;
+	}
+
+	.course-details{
+		font-family: 'Lato', serif;
+		color: #9e9d9e;
+		margin-left: 1em;
+		display: inline-block;
+	}
+}

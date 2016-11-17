@@ -1,0 +1,91 @@
+// Food Menu
+.fd-menu{
+	@include make-lg-column(12);
+}
+
+.alert{
+	border-left: 10px solid #ddd;
+	margin: 1em 0;
+}
+
+.fd_menu_content_top{
+	text-align: center;
+	padding: 4em 1em 2em;
+}
+
+.fd-menu-section{
+	@include make-lg-column(12);
+	margin-bottom: 1em;
+}
+
+.menu-section{
+	@include make-lg-column(12);
+	padding: 4em 1em 2em;
+	margin-bottom: 1em;
+	background: #333;
+	position: relative;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+
+	@media (max-width: $screen-sm-max) {
+		padding: 2em 1em 1em;
+		margin-bottom: 2em;
+	}
+
+    h2{
+    	margin: 0;
+    	font-variant: small-caps;
+    	letter-spacing: .25em;
+    	text-align: center;
+    }
+}
+
+.fd-menu-item{
+	@include make-lg-column(6);
+	padding: 2em 4em;
+	margin-bottom: 2em;
+
+	@media (max-width: $screen-sm-max) {
+		padding: 0;
+		margin-bottom: 3em;
+	}
+
+	h3{
+		@include make-sm-column(8);
+		@include make-xs-column(9);
+		margin: 0;
+		padding: 0;
+		
+		&:before{
+			border-bottom: 1px solid #ddd;
+		}
+	}
+
+	.menu-price{
+		@include make-sm-column(4);
+		@include make-xs-column(3);
+
+		.price-list{
+			list-style: none;
+			text-align: right;
+		}
+	}
+
+	.menu-desc{
+		font-family: 'Lato', serif;
+		@include make-sm-column(8);
+		padding: 0;
+		color: #9e9d9e;
+		min-height: 100px;
+
+
+	    @media (max-width: $screen-sm-max) {
+			min-height: inherit;
+		}
+
+	}
+
+}

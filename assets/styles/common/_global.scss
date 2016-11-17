@@ -1,0 +1,54 @@
+@import '../../bower_components/modular-scale/stylesheets/modular-scale';
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Josefin Slab', serif;
+}
+
+h1 {
+    font-weight:300;
+    font-size: ms(4);
+    color: #3c3c3c;
+}
+
+h2 {
+    font-weight:300;
+    font-size: ms(3);
+    color: #3c3c3c;
+}
+
+h3 {
+    font-weight:300;
+    font-size: ms(2);
+    color: #3c3c3c;
+}
+
+p {
+    font-size: ms(0);
+   	line-height: ms(0) * $line-height;
+    color: #3c3c3c;
+    margin-bottom: ms(0) * 1.5;
+}
+
+p.oblique {
+    font-weight:700;
+    font-style:oblique;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+
+.firstcharacter { 
+    float: left; 
+    color: #903; 
+    font-size: 75px; 
+    line-height: 60px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px; 
+    font-family: Georgia; 
+}
+
+

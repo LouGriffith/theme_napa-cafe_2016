@@ -1,0 +1,149 @@
+.page.home{
+	.content.row{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	main{
+		position: relative;
+		top: -73px;
+
+		@media (max-width: $screen-sm-min) {
+			top: 0;
+		}
+	}
+
+	#slider{
+
+		.slider-overlay{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			display: block;
+			z-index: 1;
+			background: rgba(0, 0, 0, .15);
+		 }
+
+		.home-logo{
+			display: none;
+		}
+	}
+
+	#homepage-slideshow{
+		img{
+			width: 100%;
+		}
+	}
+
+	#actions{
+		@include make-row();
+		max-width: 800px;
+		margin: -8em auto 0;
+
+		h3{
+			margin: 0 0 1em 0; 
+		}
+
+		.cafe-actions{
+			@include make-lg-column(7);
+			padding: 1em;
+			background: #fff;
+  			box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+  			@media (max-width: $screen-sm-max) {
+  				box-shadow: none;
+			}
+		}
+
+		.cafe-hours{
+			@include make-lg-column(6);
+			padding: 0 0 0 2em;
+
+			@media (max-width: $screen-sm-max) {
+				padding: 0;
+				border-right: 0;
+				margin-top: 2em;
+			}
+		}
+
+		.cafe-address{
+			@include make-lg-column(6);
+			border-right: 1px solid #ddd;
+
+			@media (max-width: $screen-sm-max) {
+				padding: 0;
+				border-right: 0;
+			}
+		}
+
+		.cafe-soups{
+ 			@include make-md-column-offset(1);
+			@include make-lg-column(4);
+			padding: 1em;
+			background: #fff;
+  			box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+  			@media (max-width: $screen-sm-max) {
+  				box-shadow: none;
+			}
+		}
+
+
+	}
+
+	#featured{
+		@include make-row();
+		max-width: 700px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 1em;
+		margin-top: 1em;
+
+		.feature-wrapper{
+			margin: 2em;
+			padding: 4em;
+			border: 1px solid #fff;
+			text-align: center;
+
+
+			@media (max-width: $screen-sm-max) {
+				margin: 2em;
+				padding: 2em;
+			}
+		}
+
+		h2{
+			color: #fff;
+			margin-bottom: 1em;
+
+
+			@media (max-width: $screen-sm-max) {
+				margin-bottom: .5em;
+			}
+		}
+
+		.featured-desc{
+			@include make-lg-column(12);
+			color: #fff;
+			padding: 0;
+			margin-bottom: 1em;
+			display: block;
+		}
+
+
+
+		 a.btn.btn-default{
+		 	background: none;
+		 	color: #fff;
+
+		 	&:hover{
+		 		background: #fff;
+		 		color: #333;
+		 	}
+		}
+	}
+
+	#events{
+		
+	}
+}

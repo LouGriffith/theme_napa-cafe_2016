@@ -1,0 +1,70 @@
+.header-bar{
+	position: fixed;
+	top: 0px; 
+	z-index: 999;
+	top: 2em;
+
+	transform: translateX(0);
+  	transition: .5s ease all;
+
+	.toggled &{
+		transform: translateX(300px);
+
+		@media (max-width: $screen-sm-max) {
+				transform: translateX(-300px);
+		}
+	}
+
+    @media (max-width: $screen-sm-max) {
+    	width: 100%;
+    	top: 0;
+
+    	.admin-bar &{
+			top: 46px;
+		}
+	}
+
+	.brand{
+		position: relative;
+		outline: none;
+		float: left;
+    	padding: .5em 1em;
+    	height: 4.25em;
+    	left: 0;
+    	color: #333;
+    	background: #fff;
+		
+  		transform: translateX(0);
+  		transition: .5s ease all;
+
+    	@media (min-width: $screen-md-min){
+    		padding-left: 5.5em;
+    	}
+
+    	@media (max-width: $screen-sm-max) {
+	    	width: 100%;
+		}
+
+		span{
+			display: none;
+		}
+
+		i{
+		    font-size: 5.5em;
+		    line-height: .6em;
+		}
+
+		&:hover,
+		&:focus{
+			text-decoration: none;
+		}
+
+		@media (min-width: $screen-md-min) {
+	    	.toggled &{
+				transform: translateX(-300px);
+			}
+		}
+	}
+
+
+}
